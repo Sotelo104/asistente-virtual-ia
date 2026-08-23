@@ -10,6 +10,31 @@ El proyecto fue desarrollado utilizando React y Vite, aplicando una estructura b
 
 Desarrollar una interfaz web funcional para un asistente virtual que facilite la interacción entre el usuario y un sistema de respuestas automatizadas mediante una interfaz sencilla, organizada y responsive.
 
+## Relación con los artefactos del ciclo de software
+
+El desarrollo del componente front-end se realizó teniendo en cuenta los artefactos elaborados durante las etapas anteriores del ciclo de desarrollo de software, entre ellos las historias de usuario, casos de uso, diseños, prototipos, diagrama de clases y planificación técnica del proyecto.
+
+Estos artefactos permitieron establecer las funcionalidades y características que posteriormente fueron implementadas en el componente front-end.
+
+La relación entre los requerimientos y los componentes desarrollados es la siguiente:
+
+| Requerimiento o funcionalidad | Implementación en el front-end |
+|---|---|
+| Inicio de sesión | `Login.jsx` |
+| Autenticación de la interfaz | `App.jsx` |
+| Interacción con el asistente | `Chat.jsx` |
+| Envío de mensajes | `ChatInput.jsx` |
+| Visualización de mensajes | `Message.jsx` |
+| Historial de conversaciones | `Sidebar.jsx` y `Home.jsx` |
+| Nueva conversación | `Home.jsx` y `Sidebar.jsx` |
+| Perfil del usuario | `UserProfile.jsx` |
+| Barra de navegación | `Navbar.jsx` |
+| Respuestas del asistente | `aiService.js` |
+| Indicador de procesamiento | `Loading.jsx` |
+| Manejo de errores | `ErrorMessage.jsx` |
+
+La implementación se realizó mediante una arquitectura basada en componentes, buscando facilitar la reutilización, mantenimiento y evolución del sistema.
+
 ## Tecnologías utilizadas
 
 * React
