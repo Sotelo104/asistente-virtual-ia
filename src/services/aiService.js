@@ -1,3 +1,6 @@
+// Servicio encargado de procesar las preguntas del usuario
+// y generar respuestas para el asistente virtual.
+// Actualmente utiliza respuestas de demostración.
 const responses = [
   {
     keywords: ["hola", "buenas", "hey"],

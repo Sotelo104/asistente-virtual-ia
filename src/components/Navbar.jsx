@@ -1,3 +1,4 @@
+// Barra superior de navegación del asistente virtual.
 import UserProfile from "./UserProfile";
 
 function Navbar({ user, onLogout }) {

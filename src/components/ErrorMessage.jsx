@@ -1,3 +1,4 @@
+// Componente utilizado para mostrar mensajes de error al usuario.
 function ErrorMessage({ message }) {
   return (
     <div className="error-message">

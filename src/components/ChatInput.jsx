@@ -1,3 +1,4 @@
+// Campo de entrada utilizado para escribir y enviar mensajes.
 import { useState } from "react";
 
 function ChatInput({ onSendMessage }) {

@@ -1,0 +1,13 @@
+EVIDENCIA GA7-220501096-AA4-EV03
+COMPONENTE FRONT-END DEL PROYECTO FORMATIVO
+
+Proyecto: Asistente Virtual con Inteligencia Artificial
+
+Repositorio GitHub:
+https://github.com/Sotelo104/asistente-virtual-ia
+
+Rama principal:
+main
+
+Autor:
+Daniel Camilo Sotelo Pedraza

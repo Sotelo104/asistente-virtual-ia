@@ -1,3 +1,5 @@
+// Barra lateral que muestra el historial de conversaciones
+// y permite iniciar una nueva conversación.
 function Sidebar({
   conversations,
   onNewChat,

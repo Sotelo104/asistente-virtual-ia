@@ -1,14 +1,17 @@
 import { useState } from "react";
 
+// Pantalla de inicio de sesión del asistente virtual.
 function Login({ onLogin }) {
   const [name, setName] = useState("");
   const [error, setError] = useState("");
 
+  // Valida el formulario antes de permitir el ingreso.
   const handleSubmit = (event) => {
     event.preventDefault();
 
     const trimmedName = name.trim();
 
+    // Evita ingresar al sistema sin un nombre.
     if (!trimmedName) {
       setError("Por favor, escribe tu nombre.");
       return;

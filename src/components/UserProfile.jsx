@@ -1,3 +1,4 @@
+// Muestra el nombre y el avatar del usuario autenticado.
 function UserProfile({ name }) {
   const firstLetter = name
     ? name.charAt(0).toUpperCase()

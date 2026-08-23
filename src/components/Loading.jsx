@@ -1,3 +1,4 @@
+// Indicador visual mostrado mientras se procesa una respuesta.
 function Loading() {
   return (
     <div className="message assistant">

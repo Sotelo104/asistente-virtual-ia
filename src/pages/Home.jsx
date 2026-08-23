@@ -3,6 +3,8 @@ import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import Chat from "../components/Chat";
 
+// Pantalla principal del asistente.
+// Administra las conversaciones y la conversación activa.
 function Home({ user, onLogout }) {
   const initialMessage = {
     id: 1,
@@ -10,6 +12,7 @@ function Home({ user, onLogout }) {
     text: "Hola, soy tu asistente virtual. ¿En qué puedo ayudarte?",
   };
 
+  // Estado que almacena las conversaciones creadas durante la sesión.
   const [conversations, setConversations] = useState([
     {
       id: 1,
@@ -18,6 +21,7 @@ function Home({ user, onLogout }) {
     },
   ]);
 
+  // Identificador de la conversación que se encuentra activa.
   const [activeConversationId, setActiveConversationId] =
     useState(1);
 
@@ -26,6 +30,7 @@ function Home({ user, onLogout }) {
       conversation.id === activeConversationId
   );
 
+  // Crea una nueva conversación y la establece como activa.
   const handleNewChat = () => {
     const newConversation = {
       id: Date.now(),
@@ -49,10 +54,12 @@ function Home({ user, onLogout }) {
     setActiveConversationId(newConversation.id);
   };
 
+  // Permite seleccionar una conversación existente del historial.
   const handleSelectConversation = (id) => {
     setActiveConversationId(id);
   };
 
+  // Actualiza los mensajes almacenados de una conversación.
   const handleMessagesChange = (
   conversationId,
   messages

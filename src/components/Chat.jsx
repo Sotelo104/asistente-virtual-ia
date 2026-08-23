@@ -5,6 +5,7 @@ import Loading from "./Loading";
 import ErrorMessage from "./ErrorMessage";
 import { getAIResponse } from "../services/aiService";
 
+// Componente encargado de mostrar y gestionar la conversación.
 function Chat({ conversation, onMessagesChange }) {
   const [messages, setMessages] = useState(
     conversation.messages
@@ -13,6 +14,7 @@ function Chat({ conversation, onMessagesChange }) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
+  // Actualiza los mensajes del chat y sincroniza el historial.
   const updateMessages = (newMessages) => {
     setMessages(newMessages);
 
@@ -22,6 +24,7 @@ function Chat({ conversation, onMessagesChange }) {
     );
   };
 
+  // Envía el mensaje del usuario y solicita una respuesta al servicio de IA.
   const handleSendMessage = async (text) => {
     setError("");
 
